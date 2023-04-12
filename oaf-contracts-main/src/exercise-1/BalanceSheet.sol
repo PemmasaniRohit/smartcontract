@@ -9,5 +9,14 @@ pragma solidity ^0.8.13;
 **/
 
 contract BalanceSheet {
-    constructor() {}
+    uint public balance;
+    address public transferList;
+    constructor() {
+        amounts = 10000;
+    }
+    function transfer(address a,balance b ) public {
+        balance-=b;
+        transferList.push(a);
+    }
+    
 }
