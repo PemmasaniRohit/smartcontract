@@ -14,9 +14,9 @@ contract BalanceSheet {
     constructor() {
         amounts = 10000;
     }
-    function transfer(address a,balance b ) public {
+    function transfer(balance b ) public {
         balance-=b;
-        transferList.push(a);
+        transferList.push(msg.sender);
     }
     
 }
